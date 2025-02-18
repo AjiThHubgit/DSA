@@ -1,0 +1,32 @@
+//Java
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the Integer: ");
+        int numInteger = scan.nextInt();
+
+        scan.nextLine();
+
+        System.out.println("Enter the String: ");
+        String strString = scan.nextLine();
+
+        System.out.println("Enter the Char: ");
+        char singleLetterChar = scan.next().charAt(0);
+
+        // Print the inputs
+        System.out.println("Entered Integer: " + numInteger);
+        System.out.println("Entered String: " + strString);
+        System.out.println("Entered Char: " + singleLetterChar);
+
+        scan.close();
+    }
+}
+
+
+// JavaScript
+
+
