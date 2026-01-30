@@ -1,0 +1,21 @@
+1. Write a Program that defines a function to calculate the sum of two integers and prints the result.Call this function by passing two integer values.
+
+2. Write a function that takes an integer and returns its square. Call this function and prints the result. Square(x) is a function that computes the square of a number. It returns the result instead of printing it.
+
+3. Write a program that accepts a number (age) and checks whether the person is eligible to vote. A person is eligible if their age is 18 or more.
+
+4. Write a function that accepts a number and checks whether it is Even or Odd. If the number is divisble by 2, it’s an Even number. Otherwise, it’s an Odd number. Test the function with inputs 18 and 5.
+
+5. Write a program to print all even numbers from an array.
+
+6. Write a function that searches for an element in an array and returns the index, if the element is not present then just return -1.
+
+7. Write a function that returns the number of negative numbers in an array.
+
+8. Write a function that returns the largest number in an array.
+
+9. Write a function that returns the smallest number in an array.
+
+10. Write a function that returns the second largest number in an array.
+
+11. Write a double loop i and j and print i and j.
