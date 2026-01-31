@@ -8,3 +8,8 @@ function sum(x, y) {
 
 sum(10, 15);
 
+
+// 1. sum of two integers - logic - output
+// 2. prints the result - print statement
+// 3. Call this function by passing two integer values. - input
+
