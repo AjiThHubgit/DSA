@@ -22,11 +22,13 @@ for (let i = 0; i < n; i++) {
         row = row + toggle;
 
         // switch the toggle
-        if (toggle === 1) {
-            toggle = 0;
-        } else {
-            toggle = 1
-        }
+        // if (toggle === 1) {
+        //     toggle = 0;
+        // } else {
+        //     toggle = 1
+        // }
+
+        toggle ^= 1;
     }
 
     console.log(row);

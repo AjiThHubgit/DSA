@@ -13,3 +13,32 @@ function eligibleToVote(age) {
 eligibleToVote(21);
 eligibleToVote(16);
 eligibleToVote(-1);
+
+
+
+const eligibleToVote = (age) => {
+    
+    if (age < 0) return "Invalid Input";
+    
+    if (age < 18) return "Not Eligible to vote";
+    
+    return "Eligible to Vote";
+}
+
+console.log(eligibleToVote(21));
+console.log(eligibleToVote(16));
+console.log(eligibleToVote(-1));
+
+
+// Boolean Return
+
+const isEligibleToVote = (age) => {
+  if (age < 0) return false;
+  return age >= 18;
+};
+
+if (isEligibleToVote(21)) {
+  console.log("Eligible to Vote");
+} else {
+  console.log("Not Eligible to Vote");
+}

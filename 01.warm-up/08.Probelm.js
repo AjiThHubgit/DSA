@@ -15,3 +15,19 @@ function findLargest(arr) {
 }
 
 console.log(findLargest(arr));
+
+
+
+function findLargest(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return "Invalid Input";
+  }
+
+  let largest = -Infinity;
+
+  for (const num of arr) {
+    if (num > largest) largest = num;
+  }
+
+  return largest;
+}
