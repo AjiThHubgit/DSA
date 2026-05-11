@@ -96,41 +96,41 @@ console.log("2 Word Frequency:", wordFrequency("this is is a test this"))
 // 3. Vowel Frequency Count
 // =====================================================
 /*
-Problem:
-Count frequency of vowels.
+  Problem:
+  Count frequency of vowels.
 
-Input:
-"javascript"
+  Input:
+  "javascript"
 
-Expected Output:
-{
- a:2,
- e:0,
- i:1,
- o:0,
- u:0
-}
+  Expected Output:
+  {
+  a:2,
+  e:0,
+  i:1,
+  o:0,
+  u:0
+  }
 */
 
 
 function frequencyMap(str) {
-    
-    let vowels = "aeiou";
-    
-    let seen = {};
-    
-    for (const ch of vowels) {
-        seen[ch] = 0;
+
+  let vowels = "aeiou";
+
+  let seen = {};
+
+  for (const ch of vowels) {
+    seen[ch] = 0;
+  }
+
+  for (const ch of str) {
+    if (ch in seen) {
+      seen[ch] = seen[ch] + 1;
     }
-    
-    for (const ch of str) {
-        if (ch in seen) {
-            seen[ch] = seen[ch] + 1;
-        }
-    }
-    
-    return seen;
-    
+  }
+
+  return seen;
+
 }
 
 console.log(frequencyMap('javascript'));
@@ -479,6 +479,34 @@ function isAnagram(a, b) {
 }
 
 console.log("11 Anagram:", isAnagram("listen", "silent"))
+
+
+// Input:
+// ["eat","tea","tan","ate","nat","bat"]
+
+// Output:
+// [["eat","tea","ate"],["tan","nat"],["bat"]]
+
+function groupAnagrams(arr) {
+
+  const map = {};
+
+  for (const word of arr) {
+
+    const key = word.split('').sort().join('');
+
+    if (!map[key]) {
+      map[key] = [];
+    }
+
+    map[key].push(word);
+
+  }
+
+  return Object.values(map);
+}
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
 
 
 

@@ -1,0 +1,32 @@
+// Math.floor() → rounds down to nearest integer
+Math.floor(4.9) // 4
+
+// Math.random() → generates random number between 0 and 1
+Math.floor(Math.random() * 10) // random number from 0–9
+
+// Math.round() → rounds to nearest integer
+Math.round(4.5) // 5
+
+// Math.ceil() → rounds up to nearest integer
+Math.ceil(4.1) // 5
+
+// Math.max() → returns largest number
+Math.max(5, 10, 2) // 10
+
+// Math.min() → returns smallest number
+Math.min(5, 10, 2) // 2
+
+// Math.abs() → converts number to positive distance from zero
+Math.abs(-10) // 10
+
+// Math.sqrt() → returns square root of number
+Math.sqrt(16) // 4
+
+// Math.pow() → raises number to power
+Math.pow(2, 3) // 8
+
+// modern shortcut for power
+2 ** 3 // 8
+
+// Math.PI → constant value of π (used for circle calculations)
+Math.PI * 5 * 5 // area of circle with radius 5

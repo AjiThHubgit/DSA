@@ -410,7 +410,26 @@ function removeElement(nums, val) {
 
 console.log("10 Remove Element:", removeElement([3, 2, 2, 3], 3));
 
+/*
+-----------------------------------------------------
+10. Fib Series
+-----------------------------------------------------
 
+*/
+
+function fib(n) {
+    let a = 0;
+    let b = 1;
+
+    for (let i = 0; i < n; i++) {
+        console.log(a);
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+}
+
+fib(7);
 
 /*
 =====================================================
